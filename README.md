@@ -1,6 +1,6 @@
-# testapp
+# ToDo app
 
-A new Flutter project.
+A simple Flutter to do app.
 
 ## Getting Started
 
