@@ -21,13 +21,20 @@ class _FirstPageState extends State<FirstPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('To-Do List'),
+        title: const Text('ToDo List'),
         elevation: 5,
       ),
       body: FutureBuilder<void>(
           future: readTasksFromfile(),
           builder: (context, snapshot) {
             if (snapshot.connectionState == ConnectionState.done) {
+              // Check if there is an error
+              if (snapshot.hasError) {
+                return Center(
+                  child: Text('Error: ${snapshot.error}'),
+                );
+              }
+              // altrimenti ritorna la lista
               return const TaskList();
             } else {
               return const Center(child: CircularProgressIndicator());
