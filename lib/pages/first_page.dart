@@ -21,7 +21,7 @@ class _FirstPageState extends State<FirstPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ToDo List'),
+        title: const Text('Task list page'),
         elevation: 5,
       ),
       body: FutureBuilder<void>(
