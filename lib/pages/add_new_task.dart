@@ -12,7 +12,7 @@ class AddTaskScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Add Task'),
+        title: const Text('Edit a new task'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -26,7 +26,7 @@ class AddTaskScreen extends StatelessWidget {
               const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
-                  // aggiunge una nuova task
+                  // aggiunge un nuovo task
                   final newTask = Task(title: _controller.text);
                   taskprovider.addTask(newTask);
                   Navigator.pop(context);
