@@ -1,3 +1,4 @@
 {
-    "codeium.enableCodeLens": false
+    "codeium.enableCodeLens": true,
+    "materialTheme.accent": "Indigo"
 }
