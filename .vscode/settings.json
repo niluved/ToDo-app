@@ -1,4 +1,8 @@
 {
+<<<<<<< HEAD
     "codeium.enableCodeLens": true,
     "materialTheme.accent": "Indigo"
+=======
+    "codeium.enableCodeLens": true
+>>>>>>> 0bb56bb3ab495fca8b9afa1b342339acb90d9296
 }
